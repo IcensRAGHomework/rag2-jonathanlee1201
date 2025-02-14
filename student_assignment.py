@@ -19,6 +19,9 @@ def hw02_1(q1_pdf):
     else:
         print("未能分割PDF文件。")
 
+    return last_chunk
+   
+
 def hw02_2(q2_pdf):
     pass
 
