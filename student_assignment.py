@@ -30,10 +30,10 @@ def hw02_2(q2_pdf):
 
     #splitter = RecursiveCharacterTextSplitter(["第","章", "條","\n", "\n\n", " "], 200, 10)
     text_splitter = RecursiveCharacterTextSplitter(
-        chunk_size=20, 
+        chunk_size=40, 
         chunk_overlap=0,  
         separators=[
-            r"第\s*.+\s*章",
+            r"第 \s*.+\s*章",
             r"第\s*\d+-?\d*\s*條"
         ],
         is_separator_regex=True  # 啟用正則表達式
